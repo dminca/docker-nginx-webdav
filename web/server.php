@@ -22,11 +22,6 @@
     $lockPlugin = new DAV\Locks\Plugin($lockBackend);
     $server->addPlugin($lockPlugin);
 
-    /* Configure digest auth */
-    $authBackend = new Auth\Backend\File(__DIR__ . DIRECTORY_SEPARATOR . ".htdigest");
-    $authBackend->setRealm('SabreDAV');
-    $authPlugin = new Auth\Plugin($authBackend);
-
     /* Load plugins */
     $server->addPlugin(new DAV\Browser\Plugin());
     $server->addPlugin($authPlugin);

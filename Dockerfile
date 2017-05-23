@@ -2,8 +2,8 @@ FROM          debian:jessie
 MAINTAINER    oliver@xama.us
 
 # Default webdav user (CHANGE THIS!)
-ENV           WEBDAV_USERNAME admin
-ENV           WEBDAV_PASSWORD admin
+ENV           WEBDAV_USERNAME webdav
+ENV           WEBDAV_PASSWORD vadbew
 
 # Defaults
 WORKDIR       /var/webdav
